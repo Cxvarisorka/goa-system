@@ -19,7 +19,7 @@ const Register = ({loading, setLoading}) => {
         setLoading(true);
 
         try {
-            const response = await fetch('http://localhost:3000/api/users/register', {
+            const response = await fetch('https://goa-system-back.onrender.com/api/users/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

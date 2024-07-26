@@ -9,7 +9,7 @@ const Users = () => {
 
         const fetchUsers = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/users');
+                const response = await fetch('https://goa-system-back.onrender.com/api/users');
                 const data = await response.json();
 
                 setUsers(data[0]);
